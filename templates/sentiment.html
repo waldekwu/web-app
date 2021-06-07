@@ -1,0 +1,57 @@
+<div id="polarity-visualisation">
+    <!-- Total polarity -->
+    <div id="total-polarity" class="two-col-grid">
+        <div class="cont20">
+            <p>Total sentiment polarity mean: {{ total_mean_pol_20 }}</p>
+            <img src="{{ total_sent_pol_20 }}" alt="total histplot 20"><br>
+        </div>
+        <div class="cont21">
+            <p>Total sentiment polarity mean: {{ total_mean_pol_21 }} ({{ total_sent_pol_mean_diff }})</p>
+            <img src="{{ total_sent_pol_21 }}" alt="total histplot 21"><br>
+        </div>
+    </div>
+    <!-- Gee's Restaurant polarity -->
+    <div id="gees-polarity" class="two-col-grid">
+        <div class="cont20">
+            <p>Gees sentiment polarity mean: {{ gees_mean_pol_20 }}</p>
+            <img src="{{ gees_sent_pol_20 }}" alt="gees histplot 20"><br>
+        </div>
+        <div class="cont21">
+            <p>Gees sentiment polarity mean: {{ gees_mean_pol_21 }} ({{ gees_sent_pol_mean_diff }})</p>
+            <img src="{{ gees_sent_pol_21 }}" alt="gees histplot 21"><br>
+        </div>
+    </div>
+    <!-- NMBCo polarity -->
+    <div id="nmbco-polarity" class="two-col-grid">
+        <div class="cont20">
+            <p>NMBCo sentiment polarity mean: {{ nmbco_mean_pol_20 }}</p>
+            <img src="{{ nmbco_sent_pol_20 }}" alt="nmbco histplot 20"><br>
+        </div>
+        <div class="cont21">
+            <p>NMBCo sentiment polarity mean: {{ nmbco_mean_pol_21 }} ({{ nmbco_sent_pol_mean_diff }})</p>
+            <img src="{{ nmbco_sent_pol_21 }}" alt="nmbco histplot 21"><br>
+        </div>
+    </div>
+    <!-- Oliver Spencer polarity -->
+    <div id="ospencer-polarity" class="two-col-grid">
+        <div class="cont20">
+            <p>Oliver Spencer sentiment polarity mean: {{ ospencer_mean_pol_20 }}</p>
+            <img src="{{ ospencer_sent_pol_20 }}" alt="ospencer histplot 20"><br>
+        </div>
+        <div class="cont21">
+            <p>Oliver Spencer sentiment polarity mean: {{ ospencer_mean_pol_21 }} ({{ ospencer_sent_pol_mean_diff }})</p>
+            <img src="{{ ospencer_sent_pol_21 }}" alt="ospencer histplot 21"><br>
+        </div>
+    </div>
+    <!-- The Pig Hotel polarity -->
+    <div id="thepighotel-polarity" class="two-col-grid">
+        <div class="cont20">
+            <p>The Pig Hotel sentiment polarity mean: {{ thepighotel_mean_pol_20 }}</p>
+            <img src="{{ thepighotel_sent_pol_20 }}" alt="thepighotel histplot 20"><br>
+        </div>
+        <div class="cont21">
+            <p>The Pig Hotel sentiment polarity mean: {{ thepighotel_mean_pol_21 }} ({{ thepighotel_sent_pol_mean_diff }})</p>
+            <img src="{{ thepighotel_sent_pol_21 }}" alt="thepighotel histplot 21"><br>
+        </div>
+    </div>
+</div>

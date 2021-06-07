@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Twitter Data Analysis</title>
+	<script src="https://code.jquery.com/jquery-3.x-git.min.js"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="grid">
+	<div id="sidebar" class="sidebar">
+		<h4 style="text-align: center;">Please select one of the following:</h4>
+		<button class="btn active" onclick="clearStats()">Home</button>
+		<button id="likes-btn" class="btn" onclick="getLikes()">Likes</button>
+		<button id="retweets-btn" class="btn" onclick="getRetweets()">Retweets</button>
+		<button id="replies-btn" class="btn" onclick="getReplies()">Replies</button>
+		<button id="sentiment-btn" class="btn" onclick="getSentiment()">Sentiment polarity</button>
+
+	</div>
+	<div id="main-body" class="main-body">
+		<h1 style="text-align: center;">SME Twitter Analysis</h1>
+		<div id="stats">
+			<p style="text-align: center;">Twitter Analysis comparing statistics from 5 different Twitter acounts pre and during COVID-19 pandemic</p>
+		</div>
+	</div>
+<!-- active button set up -->
+	<script>
+		var sidebar = document.getElementById("sidebar");
+		var btns = sidebar.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+			});
+		}
+	</script>
+</body>
+
+</html>
